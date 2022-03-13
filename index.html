@@ -26,7 +26,9 @@
             id="first-name"
             class="input-basic"
             name="registration"
+            placeholder="First name..."
           />
+          <p>Invalid name</p>
         </div>
         <div>
           <label for="last-name">Last name</label>
@@ -35,7 +37,9 @@
             id="last-name"
             class="input-basic"
             name="registration"
+            placeholder="Last name..."
           />
+          <p>Invalid last name</p>
         </div>
         <div>
           <label for="email">Email</label>
@@ -44,7 +48,10 @@
             id="email"
             class="input-basic"
             name="registration"
+            placeholder="Email..."
+            value=""
           />
+          <p>Invalid email</p>
         </div>
         <div class="invisible">
           <label for="confirm-email">Confirm email</label>
@@ -54,6 +61,7 @@
             class="input-basic"
             name="registration"
           />
+          <p>Email doesn't match</p>
         </div>
         <div>
           <label for="password">Password</label>
@@ -62,7 +70,9 @@
             id="password"
             class="input-basic"
             name="registration"
+            placeholder="Password..."
           />
+          <p>Invalid password</p>
         </div>
         <div class="invisible">
           <label for="confirm-password">Confirm password</label>
@@ -72,11 +82,12 @@
             class="input-basic"
             name="registration"
           />
+          <p>Password doesn't match</p>
         </div>
-        <div class="buttons">
-          <button type="submit">Submit</button>
-          <button type="clear">Clear</button>
-        </div>
+        <span class="buttons">
+          <button id="submit" type="submit">Submit</button>
+          <button id="clear" type="clear">Clear</button>
+        </span>
       </form>
     </div>
   </body>
